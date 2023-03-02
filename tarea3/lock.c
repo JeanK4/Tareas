@@ -2,7 +2,7 @@
 
 
 int main(){
-	int d1, d2, d3, d4, degrees, flag = 1, cases, res;
+	int d1, d2, d3, d4, degrees, cases, res;
 	scanf("%d %d %d %d",&d1,&d2,&d3,&d4);
 	while(d1 != 0 || d2 != 0 || d3 != 0 || d4 != 0){
 		cases = 3;
