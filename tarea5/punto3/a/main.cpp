@@ -4,19 +4,24 @@
 void insertarEnListaOrdenada(Lista& l, int v){
 	bool flag = false;
 	int j = 0;
-	while(j <= l.longLista()-1 && flag == false){
-		if(v == l.infoLista(j)){
-			l.insLista(v, j);
-			flag = true;
-		}
-		else if(v > l.infoLista(j) && v < l.infoLista(j+1)){
-			l.insLista(v, j+1);
-			flag = true;
-		}
-		j++;
-	}
-	if(v >= l.infoLista(l.longLista()))
+	if(l.vaciaLista() == true){
 		l.anxLista(v);
+	}
+	else{
+		while(j <= l.longLista()-1 && flag == false){
+			if(v == l.infoLista(j)){
+				l.insLista(v, j);
+				flag = true;
+			}
+			else if(v > l.infoLista(j) && v < l.infoLista(j+1)){
+				l.insLista(v, j+1);
+				flag = true;
+			}
+			j++;
+		}
+		if(v >= l.infoLista(l.longLista()))
+			l.anxLista(v);
+	}
 }
 /*
 int main(){
