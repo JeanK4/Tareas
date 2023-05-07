@@ -1,3 +1,4 @@
+#include <list>
 #include <vector>
 #include <string>
 #include <iostream>
@@ -28,6 +29,12 @@ class BigInteger{
 	void quotient(BigInteger &num);
 	void remainder(BigInteger &num);
 	void pow(BigInteger &num);
+
+	/*******************
+	*   ANALIZADORAS   *
+	*******************/
+	BigInteger sumarListaValores(list<BigInteger> &list);
+	BigInteger MultiplicarListaValores(list<BigInteger> &list);
 	void printBI();
 	string toString();
 

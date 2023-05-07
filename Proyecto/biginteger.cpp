@@ -1,3 +1,4 @@
+#include <list>
 #include <string>
 #include <vector>
 #include "biginteger.h"
@@ -53,7 +54,7 @@ void BigInteger::add(BigInteger &num){
 
 }*/
 
-void substract(BigInteger &num){
+void BigInteger::substract(BigInteger &num){
   
 }
 
