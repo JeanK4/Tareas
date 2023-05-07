@@ -46,9 +46,9 @@ class BigInteger{
 	BigInteger operator*(BigInteger& num);
 	BigInteger operator/(BigInteger& num);
 	BigInteger operator%(BigInteger& num);
-	BigInteger operator==(BigInteger& num);
-	BigInteger operator<(BigInteger& num);
-	BigInteger operator<=(BigInteger& num);
+	bool operator==(BigInteger& num);
+	bool operator<(BigInteger& num);
+	bool operator<=(BigInteger& num);
 
 };
 
