@@ -233,7 +233,11 @@ void BigInteger::product(BigInteger &num){
       sum(numero, ans);
     count++;
     ans = aux;
-  }   
+  }
+  if(signo != num.signo)
+    signo = false;
+  else
+    signo = true;   
 }
 
 void BigInteger::substract(BigInteger &num){
